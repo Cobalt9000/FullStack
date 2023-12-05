@@ -16,7 +16,7 @@
                 <ul id="sidemenu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#Languages">Languages</a></li>
-                    <li><a href="#use">Use Cases</a></li>
+                    <li><a href="#use">Courses</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -83,13 +83,13 @@
                     <p>
                         HTML, or Hypertext Markup Language, is a standard markup language for creating web pages and web applications.
                     </p>
-                    <a href="#">Learn More...</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn More...</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-css3-alt"></i>
                     <h2>CSS</h2>
                     <p>CSS, or Cascading Style Sheets, is a style sheet language used to describe the presentation of a document written in HTML or XML, including aspects like layout, colors, and fonts.</p>
-                    <a href="#">Learn More...</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Learn More...</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-square-js"></i>
@@ -97,15 +97,16 @@
                     <p>
                         JavaScript is a versatile programming language primarily used for adding interactivity to web pages, enabling dynamic behavior and client-side scripting.
                     </p>
-                    <a href="#">Learn More...</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Learn More...</a>
                 </div>
             </div>
+            <a href="language.html" class="btn">SEE MORE</a>
         </div>
     </div>
     <!-- ---------- Our Work --------- -->
     <div id="use">
         <div class="container">
-            <h1 class="subtitle">Use Cases</h1>
+            <h1 class="subtitle">Courses</h1>
             <div class="work-list">
                 <div class="work1">
                     <img src="images/html.webp" alt="html">
@@ -114,7 +115,8 @@
                         <p>
                             HTML is used to structure and format content on the web, facilitating the creation of web pages by defining elements and their relationships.
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <br>
+                        <a href="https://www.coursera.org/learn/html-and-css-in-depth"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="work1">
@@ -124,7 +126,8 @@
                         <p>
                             CSS is utilized to style and design HTML documents, enhancing the visual presentation of web pages through control of layout, colors, and typography.
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <br>
+                        <a href="https://www.coursera.org/learn/html-and-css-in-depth"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="work1">
@@ -134,11 +137,12 @@
                         <p>
                             JavaScript is employed for creating interactive and dynamic features on websites, enhancing user experience through functionalities like form validation, animations, and real-time updates.
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <br>
+                        <a href="https://www.coursera.org/learn/programming-with-javascript"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">SEE MORE</a>
+            <a href="course-use.html" class="btn">SEE MORE</a>
         </div>
     </div>
     <!-- ---------------------contact------------------------- -->
@@ -147,8 +151,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="subtitle">Contact Me</h1>
-                    <p> <i class="fa-solid fa-envelopes-bulk"></i> Example@gmail.com</p>
-                    <p> <i class="fa-solid fa-square-phone"></i> +91 000000000</p>
+                    <p> <i class="fa-solid fa-envelopes-bulk"></i> suprith1201@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> +916360943397</p>
                     <div class="social-icons">
                         <a href="https://twitter.com/Coblt121"><i class="fa-brands fa-square-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -202,6 +206,25 @@
         }
     </script>
     
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxrAsKhxlO98KJmiiPTSUlmNvOG5P6UJJhcUj9FaW4IPCAB33-9TFr_AWqCzP_RgFYe/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Message Sent Successfully :) "
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxrAsKhxlO98KJmiiPTSUlmNvOG5P6UJJhcUj9FaW4IPCAB33-9TFr_AWqCzP_RgFYe/exec';
@@ -237,6 +260,8 @@
             }
         });
     </script>
+    
+    
 
 </body>
 </html>
